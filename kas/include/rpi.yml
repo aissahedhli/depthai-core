@@ -1,0 +1,9 @@
+header:
+  version: 14
+
+repos:
+  meta-raspberrypi:
+    url: https://github.com/agherzan/meta-raspberrypi.git
+    path: layers/meta-raspberrypi
+    branch: kirkstone
+    commit: 255500dd9f6a01a3445ac491d1abc401801e3bad

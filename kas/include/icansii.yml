@@ -1,0 +1,10 @@
+header:
+  version: 14
+
+repos:
+  meta-icansii:
+    path: meta-icansii
+  meta-icansii-bsp:
+    path: meta-icansii-bsp
+  meta-icansii-distro:
+      path: meta-icansii-distro
