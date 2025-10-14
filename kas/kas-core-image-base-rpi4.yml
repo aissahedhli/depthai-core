@@ -8,7 +8,7 @@ header:
   
 machine: raspberrypi4-64
 distro: icansii
-target: core-image-minimal
+target: core-image-base
 
 
 
