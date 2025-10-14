@@ -15,5 +15,5 @@ local_conf_header:
         HALT,${SSTATE_DIR},100M,1K \
         HALT,/tmp,10M,1K"
 
-    DL_DIR = "/yoctoshare/downloads"
-    SSTATE_DIR = "/yoctoshare/sstate-cache"
+    DL_DIR = "${TOPDIR}/downloads"
+    SSTATE_DIR = "${TOPDIR}/sstate-cache"

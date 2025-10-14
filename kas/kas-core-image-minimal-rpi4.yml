@@ -7,7 +7,7 @@ header:
     - kas/include/icansii.yml
   
 machine: raspberrypi4-64
-distro: nodistro
+distro: icansii
 target: core-image-minimal
 
 
