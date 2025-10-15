@@ -1,0 +1,15 @@
+header:
+  version: 14
+
+repos:
+  meta-oe:
+    url: https://git.openembedded.org/meta-openembedded
+    path: layers/meta-openembedded/meta-oe
+    branch: kirkstone
+    commit: 96fbc156364fd78530d2bfbe1b8a77789f52997d
+    
+  meta-python:
+    url: https://git.openembedded.org/meta-openembedded
+    path: layers/meta-openembedded/meta-python
+    branch: kirkstone
+    commit: 96fbc156364fd78530d2bfbe1b8a77789f52997d

@@ -1,0 +1,14 @@
+header: 
+  version: 14
+
+repos:
+  meta-ros2-humble:
+    url: https://github.com/ros/meta-ros.git
+    path: layers/meta-ros/meta-ros2-humble
+    branch: kirkstone
+    commit: d3f372f9d0caf27f102e124e428f004dfbddeda4
+
+local_conf_header:
+  ros: |
+    DISTRO_FEATURES:append = " ros"
+    IMAGE_INSTALL:append = "ros-core"

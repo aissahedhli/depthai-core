@@ -1,0 +1,9 @@
+header: 
+  version: 14
+
+repos:
+  meta-ros-common:
+    url: https://github.com/ros/meta-ros.git
+    path: layers/meta-ros/meta-ros-common
+    branch: kirkstone
+    commit: d3f372f9d0caf27f102e124e428f004dfbddeda4
