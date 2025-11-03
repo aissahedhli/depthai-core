@@ -9,11 +9,16 @@ header:
     - kas/include/meta-ros2-humble.yml
     - kas/include/meta-ros2.yml
     - kas/include/meta-ros-common.yml
+    - kas/include/meta-lidar19.yml
 
   
 machine: raspberrypi4-64
 distro: icansii
 target: core-image-base
+
+#local_conf_header:
+#  debug: | 
+#    EXTRA_IMAGE_FEATURES += "debug-tweaks"
 
 
 
