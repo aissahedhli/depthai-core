@@ -9,12 +9,36 @@ header:
     - kas/include/meta-ros2-humble.yml
     - kas/include/meta-ros2.yml
     - kas/include/meta-ros-common.yml
-    - kas/include/meta-lidar19.yml
 
-  
-machine: raspberrypi4-64
-distro: icansii
-target: core-image-base
+# Définition de la machine cible pour la build Yocto. 
+# Ici, c’est un Raspberry Pi 4 en 64 bits.
+machine: raspberrypi4-64   
+
+# La distribution Yocto utilisée pour la build.
+# Elle définit les couches, variables et configurations globales du système.
+distro: icansii             
+
+# L’image finale à construire. 
+# C’est le nom de la recette image qui sera générée (système complet pour la machine).
+target: icansii-image       
+
+#local_conf_header:
+# Injection de paramètres supplémentaires dans le local.conf de Yocto.
+  # extra: |                  
+  #   SOURCE_MIRROR_URL ?= "http://downloads.yoctoproject.org/mirror/sources/"
+  #                           # Définition du miroir officiel Yocto pour télécharger les sources.
+  #                           # Le '?=' signifie que cette valeur sera utilisée seulement si elle n'est pas déjà définie.
+
+  #   INHERIT += "own-mirrors"
+  #                           # Active la classe Yocto 'own-mirrors'.
+  #                           # Elle permet de privilégier les miroirs définis localement plutôt que de télécharger directement depuis Internet.
+
+  #   BB_GENERATE_MIRROR_TARBALLS = "1"
+  #                           # Demande à BitBake de générer des tarballs des sources téléchargées.
+  #                           # Ces archives peuvent ensuite être réutilisées pour d'autres builds sans re-téléchargement.
+
+#EXTRA_OECMAKE += "-DCMAKE_VERBOSE_MAKEFILE=ON"
+
 
 #local_conf_header:
 #  debug: | 

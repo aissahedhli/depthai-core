@@ -1,6 +1,0 @@
-header:
-  version: 14
-repos:
-  meta-ldlidar-stl-ros2:
-    path: layers/ldlidar-stl-ros2
-    

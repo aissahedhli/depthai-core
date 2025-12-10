@@ -1,0 +1,18 @@
+# Luxonis DepthAI / OAK Cameras
+
+# Règle udev pour les caméras OAK de Luxonis
+# Ce fichier règle les permissions d'accès aux caméras OAK lorsqu'elles sont branchées via USB.
+
+# SUBSYSTEM=="usb" : Cette règle s'applique aux périphériques USB uniquement.
+
+SUBSYSTEM=="usb", 
+ 
+# L'attribut idVendor correspond à l'identifiant du fabricant du périphérique USB.
+# "03e7" est l'identifiant du fabricant pour Luxonis, ce qui permet de cibler spécifiquement les caméras OAK de Luxonis.
+
+ATTRS{idVendor}=="03e7", 
+
+# Cette directive définit les permissions d'accès au périphérique une fois que la règle est appliquée.
+# Les permissions "0666" signifient que tout utilisateur pourra lire et écrire sur le périphérique USB (lecture/écriture pour tout utilisateur).
+
+MODE="0666"
