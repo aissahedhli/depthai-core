@@ -1,0 +1,6 @@
+# Lidar LD19 - Luxonis / STL
+# ATTRS{idVendor} et ATTRS{idProduct} doivent correspondre à ton périphérique
+# Pour vérifier : lsusb
+# Exemple : Bus 001 Device 005: ID 10c4:ea60 Silicon Labs CP210x UART Bridge
+
+SUBSYSTEM=="usb", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE="0666", GROUP="plugdev"
